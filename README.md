@@ -4,16 +4,6 @@ A responsive landing page for a fictional handmade artisan marketplace, celebrat
 
 Mitti combines warm earthy colors, elegant typography, and natural imagery to create a welcoming digital experience that connects conscious shoppers with handmade creations.
 
-## 🎨 Design Preview
-
-### Desktop UI
-![Mitti Desktop UI](./MittiDesktopLandingPage.png)
-
-### Mobile UI
-![Mitti Mobile UI](./.png)
-
-> Update the image paths above to match the actual filenames and folders in your repository.
-
 ## 🔗 Figma Design
 
 Explore the UI/UX design and visual direction:
