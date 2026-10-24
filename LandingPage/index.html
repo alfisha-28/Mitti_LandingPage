@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitti | Handmade Stories - Handcrafted with Soul</title>
+  <meta name="description" content="Discover handmade creations by independent artists and artisans. Bring home pieces with stories, not just products.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar (Optional subtle top border glow) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#" class="brand-logo" aria-label="Mitti Homepage">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <path d="M16 26C16 26 8 20 8 13C8 8.5 11.5 5 16 5C20.5 5 24 8.5 24 13C24 20 16 26 16 26Z" fill="#607255" />
+          <path d="M16 6C16 11 13 18 8 20" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M16 6C16 12 20 18 24 20" stroke="#718663" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Mitti</span>
+          <span class="logo-tagline">HANDMADE STORIES</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#collections" class="nav-link">Shop</a></li>
+          <li><a href="#artisans" class="nav-link">Artisans</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Search Button -->
+        <button class="icon-btn search-toggle" id="searchBtn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">2</span>
+        </button>
+
+        <!-- Shop Now CTA (Desktop) -->
+        <a href="#products" class="btn btn-primary nav-cta">Shop Now &rsaquo;</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Dropdown / Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-modal">
+        <input type="text" placeholder="Search ceramics, textiles, decor..." class="search-input" id="searchInput">
+        <button class="close-search" id="closeSearchBtn">&times;</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <span class="logo-title">Mitti</span>
+        </div>
+        <button class="close-drawer-btn" id="closeDrawerBtn">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#collections" class="mobile-nav-link">Shop</a></li>
+        <li><a href="#artisans" class="mobile-nav-link">Artisans</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#products" class="btn btn-primary w-full">Shop Now &rsaquo;</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-kicker">HANDCRAFTED &bull; SUSTAINABLE &bull; MEANINGFUL</div>
+          <h1 class="hero-title">
+            Made Slowly,<br>
+            Made With Soul.
+          </h1>
+          <p class="hero-desc">
+            Discover handmade creations by independent artists and artisans. Bring home pieces with stories, not just products.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn btn-primary">Shop Collection &rsaquo;</a>
+            <a href="#artisans" class="btn btn-outline">Meet Our Artisans</a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-trust-badges">
+            <div class="trust-badge">
+              <span class="badge-icon check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5a6f50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Authentic Handmade</span>
+            </div>
+            <div class="trust-badge">
+              <span class="badge-icon heart-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#a04a2c">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </span>
+              <span>Support Independent Artists</span>
+            </div>
+            <div class="trust-badge">
+              <span class="badge-icon leaf-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#718663">
+                  <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-11 5"/>
+                </svg>
+              </span>
+              <span>Sustainable Choices</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Graphic Illustration -->
+        <div class="hero-graphic-wrapper" id="heroGraphicWrapper">
+          <svg class="hero-illustration-svg" viewBox="0 0 620 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Ceramic Vase Stoneware Gradient -->
+              <linearGradient id="ceramicStoneware" x1="0%" y1="0%" x2="100%" y2="80%">
+                <stop offset="0%" stop-color="#f5efe6"/>
+                <stop offset="35%" stop-color="#ebe2d3"/>
+                <stop offset="70%" stop-color="#dfd3c1"/>
+                <stop offset="100%" stop-color="#baaa97"/>
+              </linearGradient>
+
+              <!-- Dark Terracotta Glaze -->
+              <radialGradient id="glazeWell" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#732b17"/>
+                <stop offset="65%" stop-color="#46180c"/>
+                <stop offset="100%" stop-color="#2a0d06"/>
+              </radialGradient>
+
+              <!-- Bowl Clay Gradient -->
+              <linearGradient id="terracottaClay" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#be5b3a"/>
+                <stop offset="60%" stop-color="#a64a2c"/>
+                <stop offset="100%" stop-color="#7e321b"/>
+              </linearGradient>
+
+              <!-- Sage Green Capsule -->
+              <linearGradient id="sageArchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6e8b77"/>
+                <stop offset="100%" stop-color="#5a7563"/>
+              </linearGradient>
+
+              <!-- Soft Elevation Shadow -->
+              <filter id="heroDropShadow" x="-15%" y="-15%" width="130%" height="130%">
+                <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#3d2719" flood-opacity="0.12"/>
+              </filter>
+
+              <!-- Note Paper Shadow -->
+              <filter id="noteCardShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="2" dy="5" stdDeviation="6" flood-color="#241a12" flood-opacity="0.09"/>
+              </filter>
+
+              <!-- Seal Badge Shadow -->
+              <filter id="badgeShadow" x="-25%" y="-25%" width="150%" height="150%">
+                <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#382518" flood-opacity="0.12"/>
+              </filter>
+            </defs>
+
+            <!-- 1. Left Background Botanical Doodle Leaves -->
+            <g class="botanical-doodle" opacity="0.5">
+              <path d="M4 140 C18 100, 28 80, 20 50 C14 28, -2 14, 2 0" stroke="#7e937d" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M22 68 C35 55, 42 62, 38 74 C34 84, 22 78, 22 68 Z" fill="none" stroke="#7e937d" stroke-width="1.5"/>
+              <path d="M12 110 C-2 100, -4 115, 6 122 C14 128, 16 118, 12 110 Z" fill="none" stroke="#7e937d" stroke-width="1.5"/>
+            </g>
+
+            <!-- 2. Main Warm Sand Organic Backdrop Blob -->
+            <path d="M230 40 
+                     C380 -10, 540 10, 585 130 
+                     C630 250, 610 390, 520 460 
+                     C430 530, 280 520, 190 440 
+                     C100 360, 80 230, 140 120 
+                     C180 55, 200 45, 230 40 Z" 
+                  fill="#e5dbcc" opacity="0.75"/>
+
+            <!-- 3. Soft Pale Sage/Moss Pebble (Behind the dark green arch) -->
+            <path d="M40 220 C35 150, 80 130, 110 135 C140 140, 160 170, 165 240 C170 310, 120 370, 75 365 C40 360, 45 290, 40 220 Z" fill="#c3cdbf" opacity="0.85"/>
+
+            <!-- 4. Primary Dark Sage Green Rounded Capsule / Arch -->
+            <g class="green-arch-group">
+              <rect x="62" y="80" width="205" height="340" rx="102" fill="url(#sageArchGrad)"/>
+            </g>
+
+            <!-- 5. Tilted Pinned Note: "Good Things Take Time" -->
+            <g class="hero-pinned-note" transform="rotate(-4.5 170 240)" filter="url(#noteCardShadow)">
+              <!-- Outer torn / deckle paper edge -->
+              <path d="M106 172 
+                       Q180 169 256 173 
+                       Q259 240 255 318 
+                       Q180 322 105 316 
+                       Q102 245 106 172 Z" 
+                    fill="#ede5d5"/>
+              <!-- Inner clean paper sheet -->
+              <rect x="110" y="176" width="142" height="136" rx="3" fill="#fcf9f2"/>
+              
+              <!-- Handwritten Typography (matching exact photo: Good Things in dark, Take Time in terracotta) -->
+              <text x="145" y="215" font-family="'Caveat', cursive, sans-serif" font-size="36" font-weight="700" fill="#241c18">Good</text>
+              <text x="160" y="248" font-family="'Caveat', cursive, sans-serif" font-size="37" font-weight="700" fill="#241c18">Things</text>
+              <text x="154" y="280" font-family="'Caveat', cursive, sans-serif" font-size="37" font-weight="700" fill="#9e4328">Take</text>
+              <text x="190" y="304" font-family="'Caveat', cursive, sans-serif" font-size="37" font-weight="700" fill="#9e4328">Time</text>
+            </g>
+
+            <!-- 6. Small Grey-Sand Ceramic Cup (Behind front bowls) -->
+            <g transform="translate(252, 318)">
+              <!-- Cup shadow -->
+              <ellipse cx="25" cy="38" rx="20" ry="6" fill="#322216" opacity="0.2"/>
+              <!-- Cup body -->
+              <path d="M6 8 L10 32 C12 38, 38 38, 40 32 L44 8 Z" fill="#b4aea5"/>
+              <!-- Inner opening -->
+              <ellipse cx="25" cy="8" rx="19" ry="6.5" fill="#5c574f"/>
+              <ellipse cx="25" cy="7.5" rx="16" ry="5" fill="#443f38"/>
+            </g>
+
+            <!-- 7. Background Slim Vase with Dried Stems & Seed Pods (Right) -->
+            <g transform="translate(505, 205)">
+              <!-- Vase shadow -->
+              <ellipse cx="25" cy="165" rx="16" ry="5" fill="#382518" opacity="0.12"/>
+              <!-- Slim ceramic vase -->
+              <path d="M19 80 C19 70, 21 60, 25 55 C29 60, 31 70, 31 80 C31 92, 40 105, 41 125 C42 145, 36 162, 25 162 C14 162, 8 145, 9 125 C10 105, 19 92, 19 80 Z" fill="#d9d0c2"/>
+              <ellipse cx="25" cy="55" rx="6.5" ry="2" fill="#baae9e"/>
+              <!-- Delicate dried floral stems -->
+              <!-- Middle stem -->
+              <path d="M25 55 Q26 25 24 0" stroke="#998570" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="24" cy="0" r="3.5" fill="#bfaa94"/>
+              <circle cx="25.5" cy="18" r="3" fill="#bfaa94"/>
+              <!-- Left stem -->
+              <path d="M25 55 Q16 35 12 15" stroke="#998570" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="12" cy="15" r="3.2" fill="#bfaa94"/>
+              <circle cx="18" cy="32" r="2.8" fill="#bfaa94"/>
+              <!-- Right stem -->
+              <path d="M25 55 Q35 38 42 22" stroke="#998570" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="42" cy="22" r="3.5" fill="#bfaa94"/>
+            </g>
+
+            <!-- 8. Large Main Ceramic Stoneware Vase -->
+            <!-- Base Shadow -->
+            <ellipse cx="400" cy="455" rx="85" ry="22" fill="#382215" opacity="0.18"/>
+            
+            <g class="hero-main-vase" filter="url(#heroDropShadow)">
+              <!-- Vase Handle on the right -->
+              <path d="M440 250 C485 265, 485 330, 442 355" fill="none" stroke="url(#ceramicStoneware)" stroke-width="18" stroke-linecap="round"/>
+              <path d="M440 250 C485 265, 485 330, 442 355" fill="none" stroke="#baaa97" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+              
+              <!-- Vase Voluptuous Body -->
+              <path d="M375 185 
+                       C380 205, 388 220, 395 242 
+                       C415 275, 465 330, 465 390 
+                       C465 445, 420 460, 390 460 
+                       C345 460, 315 442, 315 390 
+                       C315 330, 355 275, 370 242 
+                       C374 220, 372 205, 375 185 Z" 
+                    fill="url(#ceramicStoneware)"/>
+
+              <!-- Flared Neck Lip Rim -->
+              <ellipse cx="388" cy="186" rx="28" ry="8" fill="#d2c4b0" stroke="#bfaa96" stroke-width="1.5"/>
+              <ellipse cx="388" cy="185" rx="22" ry="5.5" fill="#382e23"/>
+
+              <!-- Authentic Stoneware Speckles / Flecks -->
+              <ellipse cx="380" cy="220" rx="2.5" ry="1.5" fill="#887867" opacity="0.7"/>
+              <ellipse cx="390" cy="250" rx="3" ry="1.8" fill="#887867" opacity="0.65"/>
+              <ellipse cx="355" cy="320" rx="4" ry="2.2" fill="#887867" opacity="0.75"/>
+              <ellipse cx="400" cy="340" rx="4.5" ry="2.5" fill="#887867" opacity="0.7"/>
+              <ellipse cx="382" cy="380" rx="3.5" ry="2" fill="#887867" opacity="0.6"/>
+              <ellipse cx="420" cy="390" rx="5" ry="2.8" fill="#887867" opacity="0.7"/>
+              <ellipse cx="370" cy="415" rx="3" ry="1.8" fill="#887867" opacity="0.55"/>
+              <ellipse cx="408" cy="432" rx="4" ry="2" fill="#887867" opacity="0.65"/>
+            </g>
+
+            <!-- 9. Lush Eucalyptus Botanical Branch Emerging from Vase -->
+            <g class="hero-eucalyptus-branches">
+              <!-- Central & Lateral Branch Stems -->
+              <!-- Left branch -->
+              <path d="M388 185 Q365 140 332 80" stroke="#253821" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="365" y1="135" x2="350" y2="125" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="345" y1="102" x2="330" y2="95" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+
+              <!-- Center branch (tallest) -->
+              <path d="M388 185 Q405 110 435 36" stroke="#253821" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="395" y1="145" x2="410" y2="135" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="408" y1="105" x2="425" y2="92" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+
+              <!-- Right branch -->
+              <path d="M388 185 Q430 135 480 75" stroke="#253821" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="425" y1="145" x2="442" y2="132" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="455" y1="108" x2="472" y2="95" stroke="#253821" stroke-width="1.8" stroke-linecap="round"/>
+
+              <!-- Round Coin Eucalyptus Leaves (matching exact mockup: clean round shapes with petioles) -->
+              <!-- Left branch leaves -->
+              <circle cx="340" cy="120" r="13" fill="#46623f"/>
+              <circle cx="320" cy="90" r="14" fill="#354e31"/>
+              <circle cx="330" cy="74" r="12" fill="#587950"/>
+              <circle cx="295" cy="100" r="13" fill="#3b5435"/>
+
+              <!-- Center branch leaves -->
+              <circle cx="418" cy="132" r="13" fill="#587950"/>
+              <circle cx="395" cy="95" r="14" fill="#354e31"/>
+              <circle cx="434" cy="85" r="13" fill="#46623f"/>
+              <circle cx="418" cy="52" r="12" fill="#354e31"/>
+              <circle cx="440" cy="32" r="11" fill="#46623f"/>
+
+              <!-- Right branch leaves -->
+              <circle cx="452" cy="130" r="13" fill="#3b5435"/>
+              <circle cx="440" cy="92" r="14" fill="#587950"/>
+              <circle cx="482" cy="90" r="13" fill="#354e31"/>
+              <circle cx="475" cy="65" r="12" fill="#46623f"/>
+            </g>
+
+            <!-- 10. Terracotta Stacking Bowls (Foreground) -->
+            <!-- Left Terracotta Bowl -->
+            <g class="hero-left-bowl" transform="translate(152, 348)">
+              <!-- Cast Shadow -->
+              <ellipse cx="62" cy="55" rx="58" ry="16" fill="#321a10" opacity="0.22"/>
+              <!-- Bowl Outer Shell -->
+              <ellipse cx="62" cy="42" rx="58" ry="24" fill="url(#terracottaClay)" stroke="#ba5b3a" stroke-width="2"/>
+              <!-- Glazed Dark Well -->
+              <ellipse cx="62" cy="38" rx="50" ry="17" fill="url(#glazeWell)"/>
+              <!-- Inner Rim Highlight -->
+              <path d="M22 40 C35 50, 85 50, 102 40" stroke="#df7e5a" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.6"/>
+            </g>
+
+            <!-- Right Overlapping Terracotta Bowl -->
+            <g class="hero-right-bowl" transform="translate(252, 382)">
+              <!-- Cast Shadow -->
+              <ellipse cx="68" cy="54" rx="66" ry="18" fill="#321a10" opacity="0.26"/>
+              <!-- Bowl Outer Shell -->
+              <ellipse cx="68" cy="40" rx="68" ry="25" fill="url(#terracottaClay)" stroke="#bf5d3b" stroke-width="2.5"/>
+              <!-- Glazed Deep Dark Well -->
+              <ellipse cx="68" cy="36" rx="59" ry="18" fill="url(#glazeWell)"/>
+              <!-- Glossy reflection glow -->
+              <path d="M24 38 C40 50, 95 50, 112 38" stroke="#e0825f" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.7"/>
+            </g>
+
+            <!-- 11. Artisan Creations Floating Seal (Overlapping Bottom Right) -->
+            <g class="hero-artisan-seal" transform="translate(450, 368)" filter="url(#badgeShadow)">
+              <!-- Creamy Egg-Pebble Badge Base -->
+              <ellipse cx="58" cy="48" rx="58" ry="48" fill="#fffefb"/>
+              <!-- Stitched / Dashed Inner Border -->
+              <ellipse cx="58" cy="48" rx="52" ry="42" fill="none" stroke="#bfaa94" stroke-width="1.4" stroke-dasharray="3.5 3"/>
+              
+              <!-- Badge Text Layout (matching exact photo) -->
+              <text x="58" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="800" fill="#2d221c" text-anchor="middle" letter-spacing="0.2">Artisan</text>
+              <text x="58" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="800" fill="#2d221c" text-anchor="middle" letter-spacing="0.2">Creations</text>
+              <text x="58" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-style="italic" font-weight="600" fill="#9e4328" text-anchor="middle">for a</text>
+              <text x="58" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="800" fill="#2d221c" text-anchor="middle" letter-spacing="0.2">Brighter</text>
+              <text x="58" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="800" fill="#2d221c" text-anchor="middle" letter-spacing="0.2">Tomorrow</text>
+              
+              <!-- Two Olive Sprigs at Bottom -->
+              <path d="M44 88 C51 86, 65 86, 72 88" stroke="#486542" stroke-width="1.4" stroke-linecap="round"/>
+              <ellipse cx="50" cy="85" rx="3.2" ry="1.8" transform="rotate(-25 50 85)" fill="#486542"/>
+              <ellipse cx="66" cy="85" rx="3.2" ry="1.8" transform="rotate(25 66 85)" fill="#486542"/>
+              <ellipse cx="58" cy="88" rx="2.5" ry="1.5" fill="#5a7a53"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE OUR COLLECTIONS SECTION -->
+    <section class="section collections-section" id="collections">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-split">
+          <h2 class="section-title">Explore Our Collections</h2>
+          <div class="section-desc-wrapper">
+            <p class="section-subtitle">
+              From earthy ceramics to handwoven textiles, explore unique creations that bring warmth, culture, and meaning to your home.
+            </p>
+            <a href="#products" class="view-all-link">View All &rsaquo;</a>
+          </div>
+        </div>
+
+        <!-- Collections Grid -->
+        <div class="collections-grid">
+          <!-- Card 1: Ceramics -->
+          <div class="collection-card">
+            <div class="card-visual-box">
+              <svg viewBox="0 0 200 160" class="collection-svg" fill="none">
+                <!-- Soft background -->
+                <rect width="200" height="160" rx="16" fill="#ded2bf"/>
+                <!-- Tall pot -->
+                <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.08))">
+                  <!-- Neck & rim -->
+                  <rect x="76" y="50" width="12" height="24" rx="2" fill="#aa7553"/>
+                  <ellipse cx="82" cy="50" rx="7" ry="2" fill="#935f3f"/>
+                  <!-- Pot belly -->
+                  <ellipse cx="82" cy="94" rx="22" ry="22" fill="#aa7553"/>
+                  <!-- Highlight -->
+                  <path d="M72 82 Q76 94 76 104" stroke="#c49373" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                </g>
+                <!-- Flat ceramic dish / bowl -->
+                <g filter="drop-shadow(0 4px 5px rgba(0,0,0,0.12))">
+                  <ellipse cx="140" cy="98" rx="30" ry="12" fill="#693721"/>
+                  <ellipse cx="140" cy="95" rx="25" ry="8" fill="#4d2413"/>
+                  <ellipse cx="140" cy="94" rx="19" ry="5" fill="#38180a"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Ceramics</h3>
+                <p class="card-desc">Handcrafted pottery for everyday living</p>
+              </div>
+              <a href="#products" class="card-action-btn" aria-label="Explore Ceramics">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Textiles -->
+          <div class="collection-card">
+            <div class="card-visual-box">
+              <svg viewBox="0 0 200 160" class="collection-svg" fill="none">
+                <rect width="200" height="160" rx="16" fill="#ded2bf"/>
+                <!-- Stacked Folded Textiles -->
+                <g transform="translate(35, 30)">
+                  <!-- Layer 1: Forest Green -->
+                  <rect x="0" y="0" width="130" height="18" rx="5" fill="#446152"/>
+                  <!-- Layer 2: Terracotta Red -->
+                  <rect x="0" y="24" width="130" height="20" rx="5" fill="#9b4e3d"/>
+                  <!-- Layer 3: Warm Mustard / Sand -->
+                  <rect x="0" y="50" width="130" height="20" rx="5" fill="#cc9d5e"/>
+                  <!-- Layer 4: Deep Moss Green -->
+                  <rect x="0" y="76" width="130" height="20" rx="5" fill="#325042"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Textiles</h3>
+                <p class="card-desc">Woven with tradition and care</p>
+              </div>
+              <a href="#products" class="card-action-btn" aria-label="Explore Textiles">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Home Decor -->
+          <div class="collection-card">
+            <div class="card-visual-box">
+              <svg viewBox="0 0 200 160" class="collection-svg" fill="none">
+                <rect width="200" height="160" rx="16" fill="#ded2bf"/>
+                <!-- Minimal Organic Vases & Stem -->
+                <g transform="translate(48, 25)">
+                  <!-- Slender stem with orange berry -->
+                  <line x1="48" y1="4" x2="55" y2="55" stroke="#935b3d" stroke-width="2"/>
+                  <circle cx="48" cy="4" r="5" fill="#bf582b"/>
+                  <!-- Oval light stone vase -->
+                  <ellipse cx="28" cy="75" rx="18" ry="24" fill="#dfd0bc"/>
+                  <!-- Round darker stone vase -->
+                  <ellipse cx="62" cy="78" rx="20" ry="18" fill="#b99e84"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Home Decor</h3>
+                <p class="card-desc">Pieces that bring warmth home</p>
+              </div>
+              <a href="#products" class="card-action-btn" aria-label="Explore Home Decor">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Art & Prints -->
+          <div class="collection-card">
+            <div class="card-visual-box">
+              <svg viewBox="0 0 200 160" class="collection-svg" fill="none">
+                <rect width="200" height="160" rx="16" fill="#ded2bf"/>
+                <!-- Framed Artwork -->
+                <g transform="translate(62, 16)">
+                  <!-- Outer Wood Frame -->
+                  <rect x="0" y="0" width="76" height="98" rx="4" fill="#6d4c38"/>
+                  <!-- White Mat Board -->
+                  <rect x="3" y="3" width="70" height="92" rx="2" fill="#fffdfa"/>
+                  <!-- Abstract Shapes -->
+                  <!-- Terracotta circle -->
+                  <circle cx="28" cy="38" r="14" fill="#be4d2f"/>
+                  <!-- Mustard semicircle -->
+                  <path d="M34 52 C34 46, 46 46, 46 52 Z" fill="#c9974c"/>
+                  <!-- Olive bean shape -->
+                  <path d="M48 46 C48 40, 56 40, 56 46 Z" fill="#2d483c"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Art & Prints</h3>
+                <p class="card-desc">Original art by independent creators</p>
+              </div>
+              <a href="#products" class="card-action-btn" aria-label="Explore Art & Prints">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CREATIONS SECTION -->
+    <section class="section featured-section" id="products">
+      <div class="container">
+        <!-- Section Controls -->
+        <div class="featured-header-row">
+          <h2 class="section-title">Featured Creations</h2>
+          
+          <!-- Category Filter Pills -->
+          <div class="category-filters" role="tablist">
+            <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-pill" data-filter="ceramics" role="tab" aria-selected="false">Ceramics</button>
+            <button class="filter-pill" data-filter="textiles" role="tab" aria-selected="false">Textiles</button>
+            <button class="filter-pill" data-filter="home-decor" role="tab" aria-selected="false">Home Decor</button>
+            <button class="filter-pill" data-filter="art-prints" role="tab" aria-selected="false">Art &amp; Prints</button>
+          </div>
+
+          <a href="#products" class="view-all-link desktop-only">View All &rsaquo;</a>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          
+          <!-- Product 1: Terracotta Mug Set -->
+          <div class="product-card" data-category="ceramics">
+            <div class="product-image-container">
+              <button class="wishlist-btn" aria-label="Save to wishlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#776c62" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+              
+              <!-- SVG Illustration: Terracotta Mug -->
+              <svg viewBox="0 0 240 180" class="product-svg" fill="none">
+                <rect width="240" height="180" rx="16" fill="#ded2bf"/>
+                <!-- Saucer / Plate -->
+                <ellipse cx="120" cy="138" rx="60" ry="14" fill="#693721"/>
+                <ellipse cx="120" cy="135" rx="52" ry="10" fill="#844528"/>
+                <!-- Mug Body -->
+                <path d="M85 85 Q82 125 100 130 L140 130 Q158 125 155 85 Z" fill="#b05333"/>
+                <!-- Mug Rim -->
+                <ellipse cx="120" cy="85" rx="35" ry="9" fill="#954226"/>
+                <ellipse cx="120" cy="84" rx="30" ry="6.5" fill="#612310"/>
+                <!-- Handle -->
+                <path d="M152 92 C168 94, 168 118, 146 122" fill="none" stroke="#b05333" stroke-width="7" stroke-linecap="round"/>
+                <!-- Glaze highlight -->
+                <path d="M96 95 Q94 112 104 122" stroke="#d57e60" stroke-width="2" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            
+            <div class="product-details">
+              <h3 class="product-title">Terracotta Mug Set</h3>
+              <p class="product-artisan">By Clay &amp; Co.</p>
+              <div class="product-bottom-row">
+                <span class="product-price">&#8377; 899</span>
+                <button class="add-to-cart-btn" aria-label="Add Terracotta Mug Set to cart" data-name="Terracotta Mug Set" data-price="899">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Handwoven Tote Bag -->
+          <div class="product-card" data-category="textiles">
+            <div class="product-image-container">
+              <button class="wishlist-btn" aria-label="Save to wishlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#776c62" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+
+              <!-- SVG Illustration: Handwoven Tote Bag -->
+              <svg viewBox="0 0 240 180" class="product-svg" fill="none">
+                <rect width="240" height="180" rx="16" fill="#ded2bf"/>
+                <!-- Shadow -->
+                <ellipse cx="120" cy="154" rx="48" ry="8" fill="#462c1e" opacity="0.12"/>
+                <!-- Handles -->
+                <path d="M102 96 C102 64, 138 64, 138 96" fill="none" stroke="#9d866a" stroke-width="4.5" stroke-linecap="round"/>
+                <!-- Tote Body -->
+                <path d="M88 95 L96 148 L144 148 L152 95 Z" fill="#bfa889" stroke="#ab9476" stroke-width="1.5"/>
+                <!-- Fold texture & detail lines -->
+                <path d="M88 95 L152 95" stroke="#9f876a" stroke-width="2"/>
+                <line x1="112" y1="96" x2="114" y2="148" stroke="#aa9376" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="128" y1="96" x2="126" y2="148" stroke="#aa9376" stroke-width="1.5" stroke-dasharray="3 3"/>
+              </svg>
+            </div>
+
+            <div class="product-details">
+              <h3 class="product-title">Handwoven Tote Bag</h3>
+              <p class="product-artisan">By The Loom House</p>
+              <div class="product-bottom-row">
+                <span class="product-price">&#8377; 1,299</span>
+                <button class="add-to-cart-btn" aria-label="Add Handwoven Tote Bag to cart" data-name="Handwoven Tote Bag" data-price="1299">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Minimal Vase -->
+          <div class="product-card" data-category="home-decor">
+            <div class="product-image-container">
+              <button class="wishlist-btn" aria-label="Save to wishlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#776c62" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+
+              <!-- SVG Illustration: Minimal Vase on Charcoal -->
+              <svg viewBox="0 0 240 180" class="product-svg" fill="none">
+                <!-- Deep charcoal backdrop (matching design) -->
+                <rect width="240" height="180" rx="16" fill="#2d3032"/>
+                <!-- Shadow -->
+                <ellipse cx="120" cy="148" rx="38" ry="6" fill="#141617" opacity="0.6"/>
+                <!-- Modern Conical Vase Body -->
+                <path d="M112 65 L96 142 C96 146, 144 146, 144 142 L128 65 Z" fill="#eeeae3"/>
+                <!-- Base bottom rim -->
+                <ellipse cx="120" cy="142" rx="24" ry="4" fill="#a49989"/>
+                <!-- Neck opening -->
+                <ellipse cx="120" cy="65" rx="8" ry="2.5" fill="#756b5d"/>
+                <ellipse cx="120" cy="64.5" rx="6" ry="1.8" fill="#302c25"/>
+                <!-- Clean minimal lighting gradient -->
+                <path d="M112 65 L98 141 C102 143, 115 143, 116 141 L120 65 Z" fill="#fff" opacity="0.4"/>
+              </svg>
+            </div>
+
+            <div class="product-details">
+              <h3 class="product-title">Minimal Vase</h3>
+              <p class="product-artisan">By Earthforme</p>
+              <div class="product-bottom-row">
+                <span class="product-price">&#8377; 1,499</span>
+                <button class="add-to-cart-btn" aria-label="Add Minimal Vase to cart" data-name="Minimal Vase" data-price="1499">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Block Print Cushion -->
+          <div class="product-card" data-category="textiles">
+            <div class="product-image-container">
+              <button class="wishlist-btn" aria-label="Save to wishlist">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#776c62" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+
+              <!-- SVG Illustration: Block Print Cushion -->
+              <svg viewBox="0 0 240 180" class="product-svg" fill="none">
+                <rect width="240" height="180" rx="16" fill="#ded2bf"/>
+                <!-- Shadow -->
+                <ellipse cx="120" cy="154" rx="46" ry="7" fill="#462c1e" opacity="0.12"/>
+                <!-- Cushion square with rounded corners -->
+                <rect x="74" y="44" width="92" height="92" rx="18" fill="#be5337" stroke="#aa452b" stroke-width="1"/>
+                <!-- 3x3 Dot Grid Pattern (Block Print) -->
+                <circle cx="94" cy="64" r="6" fill="#f0d1be"/>
+                <circle cx="120" cy="64" r="6" fill="#f0d1be"/>
+                <circle cx="146" cy="64" r="6" fill="#f0d1be"/>
+
+                <circle cx="94" cy="90" r="6" fill="#f0d1be"/>
+                <circle cx="120" cy="90" r="6" fill="#f0d1be"/>
+                <circle cx="146" cy="90" r="6" fill="#f0d1be"/>
+
+                <circle cx="94" cy="116" r="6" fill="#f0d1be"/>
+                <circle cx="120" cy="116" r="6" fill="#f0d1be"/>
+                <circle cx="146" cy="116" r="6" fill="#f0d1be"/>
+              </svg>
+            </div>
+
+            <div class="product-details">
+              <h3 class="product-title">Block Print Cushion</h3>
+              <p class="product-artisan">By Rangrezza</p>
+              <div class="product-bottom-row">
+                <span class="product-price">&#8377; 799</span>
+                <button class="add-to-cart-btn" aria-label="Add Block Print Cushion to cart" data-name="Block Print Cushion" data-price="799">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile View All Button -->
+        <div class="mobile-center-btn mobile-only">
+          <a href="#products" class="btn btn-outline w-full">View All Products &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET THE ARTISANS / REAL PEOPLE. REAL STORIES. -->
+    <section class="artisan-story-section" id="artisans">
+      <div class="artisan-container">
+        
+        <!-- Left: Workshop Illustration / Video Hero Block -->
+        <div class="artisan-workshop-panel">
+          <svg viewBox="0 0 540 460" class="workshop-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="studioWall" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#2a1a14"/>
+                <stop offset="100%" stop-color="#190e0a"/>
+              </linearGradient>
+              <radialGradient id="wheelSpotlight" cx="50%" cy="80%" r="55%">
+                <stop offset="0%" stop-color="#462c20" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#190e0a" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Background dark workshop -->
+            <rect width="540" height="460" fill="url(#studioWall)"/>
+            <rect width="540" height="460" fill="url(#wheelSpotlight)"/>
+
+            <!-- Wooden Shelves with Clay Pots -->
+            <!-- Top shelf -->
+            <rect x="230" y="80" width="310" height="7" fill="#3d271d"/>
+            <ellipse cx="295" cy="65" rx="16" ry="15" fill="#4d3226"/>
+            <ellipse cx="340" cy="70" rx="10" ry="10" fill="#3f271c"/>
+            <ellipse cx="375" cy="62" rx="12" ry="18" fill="#4d3226"/>
+            <rect x="420" y="55" width="18" height="25" rx="4" fill="#3a2319"/>
+
+            <!-- Middle shelf -->
+            <rect x="230" y="150" width="310" height="7" fill="#3d271d"/>
+            <ellipse cx="280" cy="138" rx="18" ry="12" fill="#4d3226"/>
+            <circle cx="335" cy="138" r="12" fill="#452a1e"/>
+            <ellipse cx="385" cy="136" rx="15" ry="14" fill="#4d3226"/>
+
+            <!-- Potter's Wheel Platform -->
+            <!-- Floor turntable disc -->
+            <ellipse cx="270" cy="390" rx="145" ry="32" fill="#3a251b"/>
+            <ellipse cx="270" cy="385" rx="130" ry="26" fill="#2d1c14"/>
+            <ellipse cx="270" cy="380" rx="110" ry="20" fill="#1b100b"/>
+            <ellipse cx="270" cy="375" rx="90" ry="14" fill="#382218"/>
+
+            <!-- Artisan (Indian Craftswoman) shaping clay -->
+            <!-- Torso / Apron -->
+            <path d="M120 280 C120 240, 160 220, 210 220 C250 220, 275 250, 275 295 L260 380 L115 380 Z" fill="#2d3e42"/>
+            
+            <!-- Neck & Head -->
+            <ellipse cx="195" cy="180" rx="40" ry="46" fill="#c48a60"/>
+            <path d="M185 220 L205 220 L205 235 L185 235 Z" fill="#a8724d"/>
+            
+            <!-- Hair Bun & Braid -->
+            <ellipse cx="145" cy="188" rx="18" ry="16" fill="#1b1613"/>
+            <path d="M155 160 C165 140, 215 140, 230 165 C220 155, 170 155, 155 160 Z" fill="#1b1613"/>
+            <path d="M150 165 C140 185, 150 205, 162 208 C158 190, 152 175, 150 165 Z" fill="#1b1613"/>
+
+            <!-- Face features minimal -->
+            <ellipse cx="218" cy="184" rx="4" ry="2.5" fill="#1b1613"/>
+            <path d="M212 178 Q222 176 226 179" stroke="#1b1613" stroke-width="2" stroke-linecap="round"/>
+            <path d="M228 195 Q222 202 216 198" stroke="#a26842" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+            <!-- Arms shaping the wet vase -->
+            <path d="M150 240 C110 270, 95 340, 185 345 C205 345, 225 338, 235 320" fill="none" stroke="#c48a60" stroke-width="28" stroke-linecap="round"/>
+            
+            <!-- Right arm leaning in -->
+            <path d="M250 260 C265 290, 260 325, 245 335" fill="none" stroke="#a8724d" stroke-width="24" stroke-linecap="round"/>
+
+            <!-- Wet clay vase on wheel -->
+            <g transform="translate(230, 275)">
+              <ellipse cx="40" cy="90" rx="36" ry="10" fill="#755643"/>
+              <!-- Vase body wet ridges -->
+              <path d="M18 45 Q12 70 20 88 L60 88 Q68 70 62 45 Z" fill="#cca385"/>
+              <ellipse cx="40" cy="45" rx="22" ry="7" fill="#b99071"/>
+              <ellipse cx="40" cy="44" rx="16" ry="5" fill="#583c2c"/>
+              <!-- Horizontal wheel lathe lines -->
+              <line x1="20" y1="58" x2="60" y2="58" stroke="#eed4bf" stroke-width="1.5" opacity="0.6"/>
+              <line x1="16" y1="72" x2="64" y2="72" stroke="#eed4bf" stroke-width="1.5" opacity="0.6"/>
+            </g>
+          </svg>
+
+          <!-- Interactive "Watch Their Story" Button Overlay -->
+          <button class="watch-story-btn" id="watchStoryBtn" aria-label="Watch artisan video story">
+            <span class="play-icon-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#a04a2c">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </span>
+            <span>Watch Their Story</span>
+          </button>
+        </div>
+
+        <!-- Right: Real People, Real Stories Content + Polaroid Photos -->
+        <div class="artisan-info-panel">
+          <div class="artisan-text-content">
+            <div class="section-kicker">MEET THE ARTISANS</div>
+            <h2 class="artisan-heading">
+              Real People.<br>
+              Real Stories.
+            </h2>
+            <p class="artisan-paragraph">
+              Every piece at Mitti carries a part of someone's journey &mdash; their culture, tradition, and passion. Meet the incredible artisans who keep handmade traditions alive.
+            </p>
+            <a href="#artisans" class="btn btn-primary artisan-cta">Our Artisans &rarr;</a>
+          </div>
+
+          <!-- Quote from Artisan -->
+          <div class="artisan-quote-card">
+            <span class="quote-mark">&ldquo;</span>
+            <p class="quote-text">Crafting is not just what I do, it's who I am.</p>
+            <div class="quote-author">
+              <span class="author-dash">&mdash;</span> <strong>Meera Sharma</strong>
+              <div class="author-title">Ceramic Artist, Jaipur</div>
+            </div>
+          </div>
+
+          <!-- Tilted Polaroids -->
+          <div class="polaroid-wrapper">
+            <!-- Polaroid 1: Clay Shaping -->
+            <div class="polaroid-card polaroid-1">
+              <div class="polaroid-inner">
+                <svg viewBox="0 0 160 140" class="polaroid-svg" fill="none">
+                  <rect width="160" height="140" fill="#a48169"/>
+                  <!-- Artisan Hands molding clay bowl -->
+                  <ellipse cx="80" cy="98" rx="42" ry="14" fill="#583422"/>
+                  <ellipse cx="80" cy="94" rx="34" ry="10" fill="#7a4b33"/>
+                  <!-- Warm hands -->
+                  <path d="M42 65 C48 85, 62 90, 70 88" stroke="#d59970" stroke-width="12" stroke-linecap="round" fill="none"/>
+                  <path d="M118 65 C112 85, 98 90, 90 88" stroke="#d59970" stroke-width="12" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Polaroid 2: Glazed Finished Pot -->
+            <div class="polaroid-card polaroid-2">
+              <div class="polaroid-inner">
+                <svg viewBox="0 0 160 140" class="polaroid-svg" fill="none">
+                  <rect width="160" height="140" fill="#695748"/>
+                  <!-- Pottery on pedestal -->
+                  <ellipse cx="80" cy="100" rx="38" ry="10" fill="#32241b"/>
+                  <path d="M62 65 Q58 85 64 96 L96 96 Q102 85 98 65 Z" fill="#937a67"/>
+                  <ellipse cx="80" cy="65" rx="18" ry="5" fill="#bfaea0"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE HANDMADE? -->
+    <section class="section why-choose-section">
+      <div class="container">
+        <h2 class="section-title text-center">Why Choose Handmade?</h2>
+
+        <div class="benefits-grid">
+          <!-- Item 1 -->
+          <div class="benefit-item">
+            <div class="benefit-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#a04a2c">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Unique &amp; One of a Kind</h3>
+            <p class="benefit-desc">No mass production, just meaningful creations.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="benefit-item">
+            <div class="benefit-icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a04a2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Support Artisans</h3>
+            <p class="benefit-desc">Your purchase directly empowers independent artists.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="benefit-item">
+            <div class="benefit-icon-badge leaf-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#607255">
+                <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-11 5"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Sustainable Choices</h3>
+            <p class="benefit-desc">Eco-friendly materials and conscious living.</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="benefit-item">
+            <div class="benefit-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#a04a2c">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3 class="benefit-title">More Than a Product</h3>
+            <p class="benefit-desc">Each piece carries a story and a soul.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVED BY OUR COMMUNITY (TESTIMONIALS) -->
+    <section class="section testimonials-section" id="community">
+      <div class="container">
+        <div class="testimonials-header-row">
+          <h2 class="section-title">Loved by Our Community</h2>
+          <div class="carousel-nav-btns">
+            <button class="carousel-arrow prev" id="testimonialPrev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-arrow next" id="testimonialNext" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonials-slider-track" id="testimonialsTrack">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <span class="testi-quote-mark">&ldquo;</span>
+            <p class="testi-quote">
+              The quality and craftsmanship are simply beautiful. You can feel the love in every piece!
+            </p>
+            <div class="testi-author-row">
+              <div class="testi-meta">
+                <h4 class="testi-name">Ananya S.</h4>
+                <div class="star-rating" aria-label="5 stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+              </div>
+              <div class="testi-avatar">
+                <!-- Avatar Graphic -->
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                  <circle cx="22" cy="22" r="22" fill="#d9cdb8"/>
+                  <!-- Hair -->
+                  <circle cx="22" cy="22" r="14" fill="#1b1613"/>
+                  <ellipse cx="22" cy="24" rx="8" ry="8.5" fill="#f4cbb0"/>
+                  <path d="M14 24 C14 15, 30 15, 30 24 Z" fill="#1b1613"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <span class="testi-quote-mark">&ldquo;</span>
+            <p class="testi-quote">
+              I love that Mitti supports real artisans. Shopping here feels meaningful.
+            </p>
+            <div class="testi-author-row">
+              <div class="testi-meta">
+                <h4 class="testi-name">Rahul K.</h4>
+                <div class="star-rating" aria-label="5 stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+              </div>
+              <div class="testi-avatar">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                  <circle cx="22" cy="22" r="22" fill="#d9cdb8"/>
+                  <ellipse cx="22" cy="23" rx="10" ry="11" fill="#f0be9d"/>
+                  <!-- Hair & spectacles -->
+                  <path d="M14 17 C16 11, 28 11, 30 17 Z" fill="#2b231d"/>
+                  <rect x="15" y="19" width="6" height="4" rx="1" fill="#1e1814"/>
+                  <rect x="23" y="19" width="6" height="4" rx="1" fill="#1e1814"/>
+                  <line x1="21" y1="21" x2="23" y2="21" stroke="#1e1814" stroke-width="1.2"/>
+                  <!-- Mustache -->
+                  <path d="M18 27 Q22 26 26 27" stroke="#2b231d" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <span class="testi-quote-mark">&ldquo;</span>
+            <p class="testi-quote">
+              Every piece I bought from Mitti adds so much warmth to my home. Truly special!
+            </p>
+            <div class="testi-author-row">
+              <div class="testi-meta">
+                <h4 class="testi-name">Priya M.</h4>
+                <div class="star-rating" aria-label="5 stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+              </div>
+              <div class="testi-avatar">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                  <circle cx="22" cy="22" r="22" fill="#d9cdb8"/>
+                  <circle cx="22" cy="22" r="14" fill="#1b1613"/>
+                  <ellipse cx="22" cy="24" rx="8" ry="8.5" fill="#f4cbb0"/>
+                  <path d="M14 24 C14 15, 30 15, 30 24 Z" fill="#1b1613"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CALLOUT: BRING HOME SOMETHING MEANINGFUL -->
+    <section class="newsletter-banner-section">
+      <div class="newsletter-banner-container">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Bring Home Something Meaningful</h2>
+          <p class="newsletter-subtitle">Join our community and get 10% off your first order.</p>
+
+          <form class="newsletter-form" id="newsletterForm" onsubmit="return false;">
+            <input type="email" placeholder="Enter your email address..." class="newsletter-input" id="newsletterEmail" required>
+            <button type="submit" class="btn btn-subscribe" id="subscribeBtn">Subscribe &rsaquo;</button>
+          </form>
+          <div class="newsletter-feedback" id="newsletterFeedback"></div>
+        </div>
+
+        <!-- Right Side Ceramic Art Asset (Overlapping Banner) -->
+        <div class="newsletter-artwork">
+          <svg viewBox="0 0 280 220" class="newsletter-pottery-svg" fill="none">
+            <!-- Terracotta shallow cup -->
+            <ellipse cx="60" cy="115" rx="18" ry="7" fill="#4d2417" opacity="0.3"/>
+            <path d="M44 95 Q48 115 60 115 Q72 115 76 95 Z" fill="#c3b39f"/>
+            <ellipse cx="60" cy="95" rx="16" ry="5" fill="#a4927e"/>
+
+            <!-- Terracotta small dish -->
+            <ellipse cx="90" cy="145" rx="22" ry="8" fill="#4d2417" opacity="0.3"/>
+            <ellipse cx="90" cy="138" rx="22" ry="8" fill="#a24c2d"/>
+            <ellipse cx="90" cy="136" rx="18" ry="5" fill="#752e16"/>
+
+            <!-- Large Elegant Textured Vase -->
+            <g transform="translate(100, 10)">
+              <ellipse cx="70" cy="165" rx="42" ry="14" fill="#321e14" opacity="0.25"/>
+              <path d="M68 30 C69 45, 74 55, 80 70 C95 95, 120 130, 120 165 C120 200, 95 210, 70 210 C45 210, 20 200, 20 165 C20 130, 45 95, 60 70 C66 55, 71 45, 72 30 Z" fill="#ded4c3"/>
+              <ellipse cx="70" cy="30" rx="14" ry="4" fill="#baa994"/>
+              <ellipse cx="70" cy="29" rx="10" ry="2.5" fill="#45382b"/>
+              <!-- Vase handle -->
+              <path d="M102 95 C120 115, 118 145, 98 160" fill="none" stroke="#ded4c3" stroke-width="6" stroke-linecap="round"/>
+              <path d="M102 95 C120 115, 118 145, 98 160" fill="none" stroke="#baa994" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Brand & Mission Column -->
+      <div class="footer-brand-col">
+        <a href="#" class="brand-logo footer-logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <path d="M16 26C16 26 8 20 8 13C8 8.5 11.5 5 16 5C20.5 5 24 8.5 24 13C24 20 16 26 16 26Z" fill="#607255" />
+            <path d="M16 6C16 11 13 18 8 20" stroke="#FAF7F2" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">Mitti</span>
+            <span class="logo-tagline">HANDMADE STORIES</span>
+          </div>
+        </a>
+
+        <p class="footer-mission-text">
+          Handcrafted pieces. Meaningful stories. A brighter tomorrow.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="footer-social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Pinterest">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 20l4-9"></path>
+              <path d="M10.7 13c.4 1.2 1.5 2 2.8 2a3.5 3.5 0 0 0 3.5-3.5C17 8.5 14.5 7 12 7a5 5 0 0 0-5 5c0 1.5.7 2.8 1.8 3.5"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Columns (Desktop Grid / Mobile Accordion) -->
+      <div class="footer-links-wrapper">
+        
+        <!-- Shop Column -->
+        <div class="footer-col accordion-group">
+          <button class="footer-col-title accordion-trigger" aria-expanded="false">
+            Shop
+            <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <ul class="footer-link-list accordion-panel">
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#products">Ceramics</a></li>
+            <li><a href="#products">Textiles</a></li>
+            <li><a href="#products">Home Decor</a></li>
+            <li><a href="#products">Art &amp; Prints</a></li>
+          </ul>
+        </div>
+
+        <!-- About Column -->
+        <div class="footer-col accordion-group">
+          <button class="footer-col-title accordion-trigger" aria-expanded="false">
+            About
+            <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <ul class="footer-link-list accordion-panel">
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#artisans">Meet the Artisans</a></li>
+            <li><a href="#why-choose">Sustainability</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Column -->
+        <div class="footer-col accordion-group">
+          <button class="footer-col-title accordion-trigger" aria-expanded="false">
+            Help
+            <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <ul class="footer-link-list accordion-panel">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Trailing Olive Botanical Branch Illustration on Bottom Right -->
+      <div class="footer-botanical-graphic" aria-hidden="true">
+        <svg viewBox="0 0 220 260" class="botanical-svg" fill="none">
+          <!-- Main arching stems -->
+          <path d="M170 260 Q130 140 70 80 Q20 30 0 0" stroke="#253823" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M125 150 Q160 110 180 70" stroke="#253823" stroke-width="2" stroke-linecap="round"/>
+          <path d="M90 100 Q115 60 135 30" stroke="#253823" stroke-width="1.8" stroke-linecap="round"/>
+
+          <!-- Green Leaves -->
+          <ellipse cx="60" cy="70" rx="9" ry="16" transform="rotate(-40 60 70)" fill="#354d33"/>
+          <ellipse cx="80" cy="55" rx="8" ry="14" transform="rotate(-30 80 55)" fill="#446142"/>
+          <ellipse cx="40" cy="40" rx="9" ry="15" transform="rotate(-50 40 40)" fill="#2a3f28"/>
+          <ellipse cx="20" cy="18" rx="7" ry="12" transform="rotate(-60 20 18)" fill="#3d593b"/>
+
+          <ellipse cx="140" cy="125" rx="8" ry="15" transform="rotate(35 140 125)" fill="#446142"/>
+          <ellipse cx="165" cy="95" rx="9" ry="16" transform="rotate(45 165 95)" fill="#354d33"/>
+          <ellipse cx="180" cy="65" rx="8" ry="14" transform="rotate(55 180 65)" fill="#2a3f28"/>
+
+          <ellipse cx="108" cy="75" rx="8" ry="14" transform="rotate(25 108 75)" fill="#446142"/>
+          <ellipse cx="125" cy="45" rx="8" ry="13" transform="rotate(35 125 45)" fill="#354d33"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Legal -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">&copy; 2024 Mitti. Made with soul, for a brighter tomorrow.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="divider">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup for Cart & Wishlist -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
