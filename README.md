@@ -1,247 +1,114 @@
-# Mitti — Made Slowly, Made With Soul
+# Mitti — Made Slowly, Made With Soul 🌿
 
-### A Thoughtfully Designed Marketplace for Handmade Creations
+A responsive landing page for a fictional handmade artisan marketplace, celebrating traditional craftsmanship, sustainable living, and thoughtfully created products.
 
-Mitti is a fictional e-commerce platform that celebrates handmade products, independent artisans, traditional craftsmanship, and sustainable living. The platform connects customers with unique, thoughtfully crafted pieces that bring warmth, culture, and meaning into everyday spaces.
+Mitti combines warm earthy colors, elegant typography, and natural imagery to create a welcoming digital experience that connects conscious shoppers with handmade creations.
 
-This project was created as an individual UI/UX design assignment using **Figma**, with a focus on responsive design, Auto Layout, reusable components, and a consistent visual design system.
+## 🎨 Design Preview
 
----
+### Desktop UI
+![Mitti Desktop UI](./Mitti Desktop Landing Page.png)
 
-## Project Links
+### Mobile UI
+![Mitti Mobile UI](./.png)
 
-🎨 **Figma Design & Prototype:**  
-[View the complete Mitti design in Figma](https://www.figma.com/design/TtdwISLNJA72lfksSrdclz/Untitled?node-id=21-2802&t=hNwRYUDRM9S3opnR-1)
+> Update the image paths above to match the actual filenames and folders in your repository.
 
-📁 **GitHub Repository:**  
-This repository contains the project documentation and design deliverables.
+## 🔗 Figma Design
 
----
+Explore the UI/UX design and visual direction:
 
-## About the Project
+**[View Mitti on Figma →](https://www.figma.com/design/TtdwISLNJA72lfksSrdclz/Untitled?node-id=21-2802&t=hNwRYUDRM9S3opnR-1)**
 
-Mitti is designed to make discovering handmade products feel personal, meaningful, and visually engaging. Unlike conventional e-commerce platforms, Mitti places the stories behind the products and the people who create them at the center of the shopping experience.
+## ✨ Features
 
-The landing page introduces the brand, showcases product collections, highlights featured creations, and shares the stories of the artisans behind them.
+- **Hero Section:** Introduces the brand through editorial typography and artisan-inspired imagery.
+- **Shop by Collection:** Helps users discover products through organized categories.
+- **Featured Creations:** Showcases handmade products with image-led cards.
+- **Artisan Story:** Highlights the people and craftsmanship behind each creation.
+- **Why Handmade:** Communicates the value of sustainable and thoughtful production.
+- **Testimonials:** Builds trust through customer experiences.
+- **Newsletter Section:** Encourages visitors to stay connected with the brand.
+- **Responsive Design:** Includes desktop and mobile layouts.
+- **Consistent Design System:** Uses cohesive colors, typography, spacing, and interface components.
 
-### Project Objectives
+## 🛠️ Tech Stack
 
-- Design a visually appealing and user-friendly product landing page.
-- Establish a consistent brand identity and visual design system.
-- Use Figma Auto Layout for flexible, responsive components.
-- Create reusable UI components to maintain consistency.
-- Design desktop, tablet, and mobile layouts.
-- Communicate the brand's values through visual storytelling.
+| Technology | Purpose |
+|---|---|
+| Figma | UI/UX design and prototyping |
+| HTML5 | Page structure and content |
+| CSS3 | Styling, layouts, and responsive design |
+| JavaScript | Interactive functionality |
 
----
+## 🎨 Design System
 
-## Target Audience
+**Color palette**
 
-Mitti is designed for:
+| Color | Hex |
+|---|---|
+| Terracotta | `#A94F32` |
+| Deep Clay | `#803A26` |
+| Sage Green | `#687653` |
+| Cream | `#FAF6EF` |
+| Warm Ivory | `#F2E9DC` |
+| Charcoal | `#2E2A26` |
 
-- **Conscious consumers** who value sustainable and thoughtful purchasing.
-- **Home decor enthusiasts** looking for distinctive handmade pieces.
-- **Art and craft lovers** interested in traditional craftsmanship.
-- **Independent artisans** seeking visibility for their creations.
-- **Gift shoppers** searching for meaningful, unique products.
+**Typography**
+- **Playfair Display:** Headings and editorial statements.
+- **Poppins:** Body text, navigation, and interface elements.
 
-The interface aims to make product discovery intuitive while helping customers understand the stories and craftsmanship behind each purchase.
+The visual direction focuses on earthy tones, natural textures, generous whitespace, soft shadows, and a warm, handcrafted aesthetic.
 
----
+## 📂 Project Structure
 
-## Key Features
+```text
+mitti/
+├── README.md
+├── desktop-ui.png
+├── mobile-ui.png
+└── landing-page/
+    ├── index.html
+    ├── style.css
+    └── script.js
+```
 
-### 1. Hero Section
-Introduces Mitti's identity with the headline *"Made Slowly, Made With Soul."*, an editorial product visual, a concise brand introduction, and prominent calls to action.
+## 🚀 Getting Started
 
-### 2. Explore Our Collections
-Organizes products into four categories:
+1. Clone the repository:
 
-- Ceramics
-- Textiles
-- Home Decor
-- Art & Prints
+   ```bash
+   git clone <https://github.com/alfisha-28/Mitti_LandingPage>
+   ```
 
-### 3. Featured Creations
-Showcases selected products with product photography, names, artisan attribution, prices, wishlist controls, and shopping actions.
+2. Open the `landing-page` folder.
+3. Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code.
 
-### 4. Meet the Artisans
-Highlights the people behind the creations through artisan photography, personal stories, and craft-focused storytelling.
+No frontend framework is required for the HTML, CSS, and JavaScript implementation.
 
-### 5. Why Choose Handmade?
-Communicates the brand's core values:
+## 💡 Design Approach
 
-- Unique and one-of-a-kind products
-- Support for independent artisans
-- Sustainable choices
-- Meaningful craftsmanship
+Mitti focuses on **brand storytelling, visual product discovery, and responsive usability**. The editorial headings establish personality, earthy colors reinforce the handmade identity, and image-led sections help visitors explore the marketplace naturally.
 
-### 6. Customer Testimonials
-Presents customer feedback to communicate trust and the value of handmade products.
+The project explores the process of translating a Figma design into a responsive web interface while maintaining visual consistency across desktop and mobile screens.
 
-### 7. Newsletter Subscription
-Encourages visitors to join the Mitti community through an email subscription section.
+## 🔮 Future Improvements
 
-### 8. Footer
-Provides organized navigation for shopping categories, brand information, customer support, social links, and legal information.
+- Add product detail pages and category filters.
+- Implement search and shopping cart functionality.
+- Introduce artisan profiles and dynamic product listings.
+- Connect the newsletter form to an email service.
+- Deploy the website for public access.
 
----
+## 👩‍🎨 Credits
 
-## Design System
+**Designed and developed by Alfisha Ansari**
 
-The visual identity combines earthy colors, editorial typography, natural imagery, and simple interface patterns.
-
-### Color Palette
-
-| Color | Hex Code | Usage |
-|---|---|---|
-| Terracotta | `#A94F32` | Primary buttons and accents |
-| Deep Clay | `#803A26` | Hover states and emphasis |
-| Sage Green | `#687653` | Nature-inspired accents |
-| Dark Sage | `#4D5B3A` | Secondary emphasis |
-| Cream | `#FAF6EF` | Main background |
-| Warm Ivory | `#F2E9DC` | Secondary surfaces |
-| Sand | `#E5D5BF` | Borders and card backgrounds |
-| Warm Brown | `#8C6A48` | Supporting accents |
-| Charcoal | `#2E2A26` | Primary text |
-| White | `#FFFFFF` | Card and input backgrounds |
-
-### Typography
-
-**Primary typeface: Playfair Display**
-
-Used for headings, editorial statements, and prominent brand messaging.
-
-**Secondary typeface: Poppins**
-
-Used for body text, navigation, buttons, labels, and product information.
-
-### Visual Style
-
-- Warm, earthy, and natural color combinations
-- Editorial typography with clear hierarchy
-- Rounded cards and subtle borders
-- Soft shadows and generous whitespace
-- Organic botanical illustrations
-- Authentic artisan and product photography
-- Minimal, consistent outline icons
+Created as a UI/UX design Project.
 
 ---
 
-## Responsive Design
-
-The landing page is designed for three viewport categories.
-
-| Layout | Reference Width | Design Approach |
-|---|---:|---|
-| Desktop | 1440 px | Full navigation, two-column hero, multi-column grids |
-| Mobile | 390 px | Compact header, stacked hero, touch-friendly controls |
-
-The layouts adapt content hierarchy, spacing, and component arrangement to provide a consistent experience across screen sizes.
-
-These dimensions are design reference frames rather than fixed device requirements.
-
----
-
-## Figma Techniques Used
-
-### Auto Layout
-Applied to navigation, buttons, cards, forms, content groups, and page sections to maintain consistent spacing and support resizing.
-
-### Reusable Components
-Designed reusable components for:
-
-- Navigation bar
-- Primary and secondary buttons
-- Collection cards
-- Product cards
-- Artisan cards
-- Testimonial cards
-- Form fields
-- Newsletter section
-
-### Component Variants
-Organized component states and styles to support consistent interface patterns, including button states and responsive navigation variations.
-
-### Shared Styles and Variables
-Established shared color variables, typography styles, and spacing conventions to maintain visual consistency throughout the design.
-
-### Responsive Layout Principles
-Used appropriate resizing rules, Auto Layout, and alternative component arrangements to adapt the interface to desktop, tablet, and mobile frames.
-
----
-
-## Design Decisions
-
-### Why Terracotta?
-Terracotta reflects clay, pottery, and traditional craftsmanship while providing a distinctive primary action color.
-
-### Why Sage Green?
-Sage introduces a natural accent that reinforces the brand's connection to sustainability and organic materials.
-
-### Why Playfair Display and Poppins?
-The serif typeface creates an editorial, handcrafted character, while the sans-serif typeface keeps interface text clear and readable.
-
-### Why Artisan Storytelling?
-Highlighting artisans gives products a human context and helps differentiate Mitti from a conventional product catalogue.
-
-### Why Responsive Design?
-Customers may discover products on different devices. Responsive layouts keep the brand experience consistent while adapting navigation, grids, and content hierarchy to available space.
-
----
-
-## Project Structure
-
-The Figma file is organized around the following design areas:
-
-- **Cover:** Brand introduction and project overview
-- **Foundations:** Colors, typography, spacing, grids, and visual rules
-- **Components:** Reusable interface elements and variants
-- **Responsive Layouts:** Desktop, tablet, and mobile designs
-- **Landing Page:** Complete homepage composition
-- **Prototype & Handoff:** Interactions, design references, and component documentation
-
----
-
-## Expected Deliverables
-
-- Complete landing-page design
-- Desktop & mobile layouts
-- Reusable Figma components
-- Shared color and typography styles
-- Auto Layout implementation
-- Target audience and design rationale
-- Figma design link
-
----
-
-## Tools Used
-
-- **Figma** — UI/UX design, Auto Layout, components, and prototyping
-- **GitHub** — Project documentation and submission
-
----
-
-## Learning Outcomes
-
-Through this project, I explored how to:
-
-- Translate a brand concept into a cohesive digital experience.
-- Establish a consistent design system.
-- Apply Auto Layout to reusable components.
-- Design responsive interfaces for multiple screen sizes.
-- Use visual hierarchy and storytelling to communicate product value.
-- Document design decisions and prepare a project for handoff.
-
----
-
-## Conclusion
-
-Mitti demonstrates how thoughtful UI/UX design can combine usability, brand storytelling, and visual consistency in a product landing page.
-
-The design celebrates handmade craftsmanship while providing a clear and welcoming shopping experience across desktop, tablet, and mobile devices.
-
-**Mitti — Made slowly, made with soul.**
-
----
-
+<p align="center">
+  <strong>Mitti — Made Slowly, Made With Soul.</strong><br>
+  Celebrating the beauty of things made by hand.
+</p>
