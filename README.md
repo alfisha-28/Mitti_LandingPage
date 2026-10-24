@@ -7,7 +7,7 @@ Mitti combines warm earthy colors, elegant typography, and natural imagery to cr
 ## 🎨 Design Preview
 
 ### Desktop UI
-![Mitti Desktop UI](./Mitti Desktop Landing Page.png)
+![Mitti Desktop UI](./MittiDesktopLandingPage.png)
 
 ### Mobile UI
 ![Mitti Mobile UI](./.png)
