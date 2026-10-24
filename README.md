@@ -135,7 +135,6 @@ The landing page is designed for three viewport categories.
 | Layout | Reference Width | Design Approach |
 |---|---:|---|
 | Desktop | 1440 px | Full navigation, two-column hero, multi-column grids |
-| Tablet | 1024 px | Compact navigation, optimized grids, balanced spacing |
 | Mobile | 390 px | Compact header, stacked hero, touch-friendly controls |
 
 The layouts adapt content hierarchy, spacing, and component arrangement to provide a consistent experience across screen sizes.
@@ -207,7 +206,7 @@ The Figma file is organized around the following design areas:
 ## Expected Deliverables
 
 - Complete landing-page design
-- Desktop, tablet, and mobile layouts
+- Desktop & mobile layouts
 - Reusable Figma components
 - Shared color and typography styles
 - Auto Layout implementation
